@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: darkolivegreen;
+  color: cyan;
+}
+
+.navLink {
+  color: cyan;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}

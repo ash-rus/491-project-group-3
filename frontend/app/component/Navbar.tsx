@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Home.module.css"; // import the CSS module
+import styles from "../style/Navbar.module.css"; // import the CSS module
 
 export default function Navbar() {
   return (
-      <><Link href='/home'>Home</Link><Link href='/how-it-works'>How It Works</Link><Link href='/faq'>FAQ</Link></>
+      <div className={styles.navbar} >
+      <Link href="/home" className={styles.navLink}>Home</Link>
+      <Link href="/how-it-works" className={styles.navLink}>How It Works</Link>
+      <Link href="/faq" className={styles.navLink}>FAQ</Link>
+      </div>
   );
-}
+} 
